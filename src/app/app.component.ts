@@ -4,6 +4,7 @@ import { ServerStatusComponent } from "./dashboard/server-status/server-status.c
 import { TrafficComponent } from "./dashboard/traffic/traffic.component";
 import { TicketComponent } from "./dashboard/tickets/tickets.component";
 import { DashboardItemComponent } from "./dashboard/dashboard-item/dashboard-item.component";
+import { NewTicketComponent } from './dashboard/tickets/new-ticket/new-ticket.component';
 
 @Component({
   selector: 'app-root',
