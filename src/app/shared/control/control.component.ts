@@ -8,7 +8,7 @@ import { Component, ElementRef, HostBinding, HostListener, inject, Input, ViewEn
   styleUrl: './control.component.css',
   encapsulation: ViewEncapsulation.None,
   host: {
-    class: 'control',
+    class: 'control', //<-- host element's class
     '(click)': 'onClick()',
   }
 })
