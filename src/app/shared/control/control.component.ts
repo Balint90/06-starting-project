@@ -9,7 +9,7 @@ import { Component, ElementRef, HostBinding, HostListener, inject, Input, ViewEn
   encapsulation: ViewEncapsulation.None,
   host: {
     class: 'control', //<-- host element's class
-    '(click)': 'onClick()',
+    '(click)': 'onClick()',  //<-- click event
   }
 })
 export class ControlComponent {
