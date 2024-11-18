@@ -12,13 +12,13 @@ import { FormsModule } from '@angular/forms';
 })
 export class NewTicketComponent {
   // @ViewChild('newTicketForm') private newTicketForm?: ElementRef<HTMLFormElement>;
-  private newTicketForm = viewChild<ElementRef<HTMLFormElement>>('newTicketForm');
+  private newTicketForm = viewChild.required<ElementRef<HTMLFormElement>>('newTicketForm');
 
   onSubmit(title: string, text: string) {
     console.log("Submitted!");
     console.log('Entered title ' + title);
     console.log("Text");
-    this.newTicketForm()?.nativeElement.reset();
+    this.newTicketForm().nativeElement.reset();
   }
 
 }
